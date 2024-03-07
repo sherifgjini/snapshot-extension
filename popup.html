@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Screenshot Extension</title>
+    <script src="html2pdf.js"></script>
+    <script src="content.js"></script>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+
+  <body class="extension-body">
+    <span class="loader">Generating PDF...</span>
+    <header>
+      <h1>Capture screenshots between tabs</h1>
+    </header>
+    <p class="title">No screenshots yet, start by clicking capture button</p>
+    <button id="capture">Capture Screenshot</button>
+    <div id="screenshotContainer"></div>
+    <div id="downloadImages"></div>
+    <div class="download">
+      <button id="download">Download as PDF</button>
+    </div>
+  </body>
+</html>

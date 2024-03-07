@@ -1,0 +1,100 @@
+.extension-body {
+  width: 500px;
+  height: 700px;
+  background: #222;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+}
+h1,
+p {
+  margin: 0;
+}
+header {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #999;
+  padding-bottom: 10px;
+}
+header h1 {
+  font-size: 1rem;
+  text-align: center;
+}
+.title {
+  text-align: center;
+}
+button {
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: #eee;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid #222;
+  cursor: pointer;
+}
+button:hover {
+  background: #444;
+  color: #fff;
+  border-color: #fff;
+}
+#capture,
+#download {
+  display: block;
+  margin: 10px auto;
+}
+.download {
+  display: none;
+}
+#screenshotContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#screenshotContainer > div {
+  flex-basis: calc(50% - 10px);
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 16/9;
+  border: 3px solid #eee;
+  border-radius: 14px;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+#screenshotContainer img {
+  width: 100%;
+  height: 100%;
+}
+#screenshotContainer button {
+  opacity: 0.5;
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+}
+#screenshotContainer > div:hover button {
+  opacity: 1;
+}
+.download {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #333;
+}
+.loader {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2rem;
+  display: none;
+}
